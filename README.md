@@ -1,60 +1,95 @@
-# Phase 1 Project Template - Minimum Viable Product (MVP)
+## Microsoft Needs Movie Industry Analysis
 
-![blueprint](images/blueprint.png)
+**Authors**: Authors: Pete VanZandt, Dorothy Alexander, and John Carter Simmons
 
-This repository is like a blueprint, providing structure for your first End of Phase Project. We suggest you base your Phase 1 project off of this repository so you can focus less on formatting and organization, and more on the _analysis and communication skills_ that will support your progress through the course. This template is designed to make your project portfolio-ready in order to impress the future employers who will review it. 
+## Overview
+![Microsoft_logo](https://user-images.githubusercontent.com/84737811/121695537-c25e6680-ca90-11eb-9f51-fc85ccddc2ee.png)
 
-## Repository Contents
+This project helps Microsoft decide what route to take in order to be successful in diving into the movie industry. Descriptive analysis shows how the movie industry trend is looking and what routes Microsoft can take in order to set themselves up for success.​
 
-Below is a list of the contents of this repository - instructions for using them are in the next section.
+## Business Problem
+![Movie_logo](https://user-images.githubusercontent.com/84737811/121695729-f33e9b80-ca90-11eb-8073-3290f8023262.png)
 
-- `README.md`: The README for this repo explaining its contents - you're reading it now.
-- `TEMPLATE_README.md`: An example of a project README that provides a brief overview of your whole project.
-- `dsc-phase1-project-template.ipynb`: A starter Jupyter Notebook with headings, code examples and guiding questions.
-- `create_sql_database.ipynb`: A notebook for creating a SQL database if you would prefer to use SQL for this project.
-- `DS_Project_Presentation_Template.pdf`: A starter slide deck presenting your project - here is an [editable version](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy).
-- `data` folder: A folder for the data you reference with your code.
-- `src` folder: A folder containing custom functions.
-- `images` folder: A folder for the images you reference in your files .
-- `.gitignore`: A hidden file that tells git to not track certain files and folders.
-
-## Instructions For Using This Repository
-
-### Create a new Github repository. 
-If you are working in a group, only one member of your team should complete these steps.
-
-1. Click [this link](https://github.com/new) and set up a new Github  Repository.
-   - Give your repository a name that is descriptive of the project. (You can change this later if you think of a better name)
-   - Set the repository to public
-   - Skip the `Initialize this repository with` section.
-   - Click `Create Repository`
-   - Set your group members as collaboators.
-
-2. Clone the repository you created in step 1
-   - Click the green code button
-   - Copy the provided https link. (It should end with `.git`)
-   - Open a terminal window
-   - cd into your phase 1 folder
-   - Clone the github repository
-   
-3. Pull down the project files
-   - cd into the newly created project folder from step 2
-   - run `git remote add upstream https://github.com/learn-co-students/bsc-phase-1.git`
-   - run `git pull upstream main`   
-
-4. Push the project files to your personal github repository
-
-If you are working in a group, and did not complete the above steps, you should clone the repository made by your team member.
-
-### Use The Slide Template
-
-1. Go to [this link](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy) to make an editable copy of the slide deck in your own Google Drive account
-2. Go to "Slide," select "Change Theme," and pick a theme you like so your presentation doesn't look like everyone else's
+Microsoft has never attempted to go into the movie industry before, so there will be some big decisions they will have to decide on. One thing that is not going to be an obstacle for them will be funding. However, with the research we gathered, maximizing production budgets alone does not have the highest chance of success.
 
 
+## Data
 
-### Notes
+The data sources included are:
+[IMBD]  https://www.imdb.com/ 
+[Numbers Database] https://www.the-numbers.com/
 
-- The visualizations in the notebook use best practices for visualization that you should try to emulate. For example, they have clear axes, descriptive titles, and appropriate number formatting.
-- The `dsc-phase1-project-template.ipynb` is intended to be the _final version_ of your project. The first notebook you create will not look like this. You are encouraged to start with a very disorderly notebook and clean it as you go.
-- If you would like to use SQL for this project, please open the `create_sql_database.ipynb` notebook, and run the cells. The schema for the database is stored in the images/ folder.
+We focused on two main metrics for success in the film industry:
+Our first measure of success is the net profit, which was determined as total gross minus the production costs of the movies being produced.
+Our second measure of success is the return on investment, which was determined as net profit divided by the production costs of the movies.
+
+
+## Methods
+
+We used a descriptive analysis of data for the movie industry over time, with a focus on the last decade. Our advice provides Microsoft with a guide to help make their decision on venturing into movie production.
+Our recommendations focus on the budgetary investment, the genre of films, and the timing of release dates.​
+
+
+## Results
+
+#### Visual 1
+![image](https://user-images.githubusercontent.com/84737811/121696075-4f092480-ca91-11eb-8dc2-0e43c224485e.png)
+
+Movie earnings are showing a positive trend within the past five years. Box office ticket sales are rising, indicating that this is a good time for Microsoft to go into the movie industry.
+
+#### Visual 2
+![image](https://user-images.githubusercontent.com/84737811/121696536-c8a11280-ca91-11eb-9f1b-4ae606ed53cf.png)
+
+The lower budget range is the blue colored dots on the graph above. Data on low budget films suggest that if Microsoft decides to produce a movie in this budget range then it is possible to make a high proportional profit but these cases are rare and the returns are small. The larger budget films (in orange) have the capacity to earn large profits, but the overall fiscal exposure is greater. The middle 50% of movies are in the moderate budget range (green dots), and they have mixture of high potential gain with lower financial risk.
+
+#### Visual 3
+![image](https://user-images.githubusercontent.com/84737811/121696743-ff772880-ca91-11eb-93a8-283fd419c642.png)
+
+Within the budget range of $5-45 million films, Drama and Comedy are the two genres that are the most successful in bringing a return of investment greater than two times their original budget.
+
+#### Visual 4
+![image](https://user-images.githubusercontent.com/84737811/121696992-3c431f80-ca92-11eb-8f33-ae73d7907581.png)
+
+For the largest budget movies in the $45-400 million range, Action and Adventure are the two genres that are the most successful in bringing a return on investment greater than two times their original budget.
+
+#### Visual 5
+![image](https://user-images.githubusercontent.com/84737811/121697155-64cb1980-ca92-11eb-874c-9f1571b5cc48.png)
+
+The most successful moderate budget films are released throughout the year, with minimal variation throughout the year. Our recommendation is that Microsoft should try to not release during the summer months in order to successfully bring in a return of investment greater than two times their original budget.
+
+#### Visual 6
+![image](https://user-images.githubusercontent.com/84737811/121697390-a1971080-ca92-11eb-8242-cd6d7d0a4147.png)
+The larger budget successful films seem to be released during summer and early winter peaks. Microsoft should try to release during the summer and winter months in order to successfully bring in a return of investment greater than two times their original budget.
+
+
+## Conclusions
+
+There are two routes that yield high chances for success:
+The first route that Microsoft can take is to produce films with a moderate budget of $5-45 million. If they choose to spend a moderate amount on their production then they should focus creating drama or comedy movie and they should aim to not release their movie during the summer months.
+The second route that Microsoft can take is to produce films with a large budget of $45-400 million. If they choose to spend a large amount on their production thwn they should focus on creating action/adventure movies and aim to release during the summer or winter months.
+
+## Next Steps
+
+Further analysis that could help Microsoft:
+It would be beneficial to look at what trend the streaming market is instead of box office trends. Microsoft may have an easier transition into creating a streaming service instead of going into the movie theaters
+
+## For More Information
+
+Please review our full analysis in [our Jupyter Notebook](https://github.com/john-c-simmons/microsoft_film_reccomendation/blob/master/Final%20Notebook.ipynb) or our [presentation](https://github.com/john-c-simmons/microsoft_film_reccomendation/blob/3ac0d0b0bbe6b679129f16f5b49f339bfc8c14ff/MS_movie_pitch_JCDP.pdf).
+
+For any additional questions, please contact **Pete VanZandt & pvanzand@bsc.edu, Dorothy Alexander & dcalexan@bsc.edu, John Carter Simmons & jcsimmon@bsc.edu**
+
+## Repository Structure
+
+Describe the structure of your repository and its contents, for example:
+
+```
+├── data
+├── images 
+├── Final Notebook.ipynb
+├──MS_movie_pitch_JCDP.pdf
+├──Movie_analysis_screening06-08.ipynb
+├──Pete_Movie_analysis_screening_clean.ipynb
+├──da_sql_database.ipynb
+└──Microsoft_README.md                                                                  
+```
